@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Modalwithbutton from './Components/Modal/Modalbutton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Tuniet React Component Library</h1>
+      <div className='components'>
+        <div className='component modal'>
+          <h3>Modal</h3>
+          <span>Click on button to open modal</span>
+          <Modalwithbutton />
+        </div>
+      </div>
+      
     </div>
   );
 }
