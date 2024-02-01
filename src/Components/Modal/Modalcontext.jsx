@@ -1,7 +1,7 @@
 import React,  {useState, useEffect} from 'react';
 import Modal from './Modal';
 
-function Modalwithbutton(props) {
+function Modalcontext(props) {
     const [modalactive, setmodalactive] = useState('');
     const [inmodal, setinmodal] = useState(false);
   
@@ -36,4 +36,4 @@ function Modalwithbutton(props) {
     </div>
   );
 }
-export default Modalwithbutton
+export default Modalcontext

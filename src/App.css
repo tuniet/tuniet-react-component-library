@@ -7,11 +7,15 @@
   h1{
     margin: 0;
   }
+  
 }
 .components{
   display: flex;
   padding: 50px;
+  gap: 30px;
 }
 .component{
   text-align: center;
+  max-width: 250px;
 }
+
