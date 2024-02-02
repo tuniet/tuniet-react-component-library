@@ -36,7 +36,7 @@ function OffCanvascontext(props){
     <div>
         <button onClick={handleopen}>OPEN OFFCANVAS</button>
         <div className={`overlay-bg ${offcanvasact}`} onClick={handleclose}></div>
-        <OffCanvas setincanvas={setincanvas} active = {offcanvasact} content = {Content}/>
+        <OffCanvas setincanvas={setincanvas} active = {offcanvasact} content = {Content()}/>
     </div> 
     )
 }
