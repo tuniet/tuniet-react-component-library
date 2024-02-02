@@ -1,34 +1,34 @@
-.modal{
-    width: calc(100% - 160px);
-    max-width: 600px;
-    padding: 40px;
+.offcanvas{
+    width: 0;
+    height: 100vh;
+    padding: 20px;
     background-color: #fff;
     color: black;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     z-index: -10;
-    opacity: 0;
-    transform:translate(-50%, -50%);
+    transition: width .1s ease-in-out;
   }
-  .modal.modal-active{
+  .offcanvas.offcanvas-active{
     z-index: 101;
-    opacity: 1;
+    width: 300px;
   }
-  .modal-close-button{
+  .offcanvas-close-button{
+    font-size: 20px;
     position: absolute;
-    top: 5%;
-    right: 3%;
+    top: 5px;
+    left: 5px;
     cursor: pointer;
   }
-  .modal-title{
+  .offcanvas-title{
     margin: 0%;
     margin-top: 40px;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 20px;
   }
-  .modal-txt{
+  .offcanvas-txt{
     max-width: 525px;
     margin: auto;
   }
@@ -41,11 +41,11 @@
     z-index: 50;
     opacity: 0;
     pointer-events: none;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     transition: opacity .4s ease;
     background-color: rgba(0,0,0,.3);
   }
-  .overlay-bg.modal-active{
+  .overlay-bg.offcanvas-active{
     opacity: 1;
     cursor: pointer;
     pointer-events: all;

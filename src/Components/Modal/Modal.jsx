@@ -11,10 +11,9 @@ function Modal(props) {
       return props.content
     }
   return (
-    <div className={`contact-modal ${props.active}`}>
+    <div className={`modal ${props.active}`}>
         <span className='modal-close-button' onClick={handleClose}><IoMdClose /></span>
-        <Content />
-        
+        <Content /> 
     </div>
   );
 }
