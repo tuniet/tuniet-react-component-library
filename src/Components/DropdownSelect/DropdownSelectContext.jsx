@@ -10,7 +10,9 @@ function SelectContext(){
     };
 
 return(
-    <div>
+    <div className='select-comp component'>
+      <h3>Select</h3>
+      <span>Click on the box to display more options</span>
       <DropdownSelect
         title="Select a number"
         options={["uno", "dos", "tres"]}

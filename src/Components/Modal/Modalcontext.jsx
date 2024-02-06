@@ -29,7 +29,9 @@ function Modalcontext(props) {
       )
     }
   return (
-    <div>
+    <div className='modal-comp component'>
+        <h3>Modal</h3>
+        <span>Click on button to open modal</span>
         <button onClick={handleopen}>OPEN MODAL</button>
         <div className={`overlay-bg ${modalactive}`} onClick={handleclose}></div>
         <Modal active = {modalactive} setinmodal={setinmodal} content = {Content()}/>
