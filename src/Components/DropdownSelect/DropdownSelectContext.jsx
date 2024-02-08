@@ -3,11 +3,7 @@ import DropdownSelect from "./DropdownSelect";
  
 function SelectContext(){
 
-    const [selected, setSelected] = useState('one');
-  
-    const handleselchange = (e) => {
-      setSelected(e.target.value);
-    };
+  const [selected, setSelected] = useState('one');
 
 return(
     <div className='select-comp component'>
