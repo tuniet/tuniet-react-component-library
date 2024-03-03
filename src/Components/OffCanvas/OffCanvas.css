@@ -1,5 +1,5 @@
 .offcanvas{
-    width: 0;
+    width: 300px;
     height: 100vh;
     padding: 20px;
     background-color: #fff;
@@ -8,11 +8,12 @@
     top: 0;
     left: 0;
     z-index: -10;
-    transition: width .1s ease-in-out;
+    transform: translateX(-500px);
+    transition: transform .5s ease-in-out;
   }
   .offcanvas.offcanvas-active{
     z-index: 101;
-    width: 300px;
+    transform: translateX(0);
   }
   .offcanvas-close-button{
     font-size: 20px;
